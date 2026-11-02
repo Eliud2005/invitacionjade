@@ -33,7 +33,7 @@ export default async function Footer() {
         </p>
 
         <a
-          href="https://diamondcode.dev"
+          href="https://diamondcode.mx"
           target="_blank"
           rel="noopener noreferrer"
           className="mt-4 inline-block opacity-80 transition hover:opacity-100"
