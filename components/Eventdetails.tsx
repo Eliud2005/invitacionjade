@@ -25,16 +25,15 @@ export default function EventDetails() {
 
           {/* Mapa integrado */}
           <div className="mt-8 overflow-hidden rounded-xl border border-white/10 shadow-inner">
-            <iframe
-              // ⚠️ RECUERDA: Cambia este src por el enlace real de "Insertar mapa" de Google Maps
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15234.564456789!2d-96.724!3d-16.98!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTbCsDU4JzQ4LjAiTiA5NsKwNDMnMjYuNCJX!5e0!3m2!1ses!2smx!4v1600000000000"
-              width="100%"
-              height="300"
-              style={{ border: 0 }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              title="Ubicación del evento"
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d710.337912315547!2d-96.68738509995072!3d16.80376507868546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1ses!2smx!4v1793648602957!5m2!1ses!2smx" 
+              width="100%" 
+              height="350" 
+              style={{ border: 0 }} 
+              allowFullScreen 
+              loading="lazy" 
+              referrerPolicy="strict-origin-when-cross-origin"
+              title="Ubicación del Salón Kenia"
             />
           </div>
           
@@ -51,14 +50,14 @@ export default function EventDetails() {
         {/* Sección de Padres y Padrinos */}
         <div className="mt-16 space-y-8">
           <div>
-            <p className="text-[10px] uppercase tracking-[0.3em] text-dorado/100">Padres</p>
+            <p className="text-[10px] uppercase tracking-[0.3em] text-dorado">Padres</p>
             <p className="mt-2 text-lg text-white font-serif">{EVENT.padres}</p>
           </div>
           
           <div className="mx-auto h-px w-12 bg-dorado/30" />
 
           <div>
-            <p className="text-[10px] uppercase tracking-[0.3em] text-dorado/100">Padrinos</p>
+            <p className="text-[10px] uppercase tracking-[0.3em] text-dorado">Padrinos</p>
             <p className="mt-2 text-lg text-white font-serif">{EVENT.padrinos}</p>
           </div>
         </div>

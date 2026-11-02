@@ -5,7 +5,7 @@ export const EVENT = {
     lugar: "Salón Kenia",
     direccion: "Calle Macedonio Alcalá número 34, San Antonino Castillo Velasco",
     hora: "5:00 PM",
-    mapa: "https://maps.google.com/?q=Salon+Kenia+San+Antonino+Castillo+Velasco", // Ajusta el link si es necesario
+    mapa: "https://maps.app.goo.gl/aTrzMy7U2JcxcwTG6", // Ajusta el link si es necesario
   },
   padres: "Armando Sánchez Aguilar y Gloria Elizabeth Hernández Lorenzo",
   padrinos: "Teodoro Esquivel López y Sonia Lorenzo Páramo",
