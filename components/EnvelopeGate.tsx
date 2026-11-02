@@ -3,6 +3,8 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import { EVENT } from "@/lib/constants";
+import BackgroundMusic from "./Backgroundmusic";
+// 👈 Importamos la música
 
 export default function EnvelopeGate({
   children,
@@ -31,6 +33,9 @@ export default function EnvelopeGate({
         }`}
         aria-hidden={!abierto}
       >
+        {/* 👇 La música se monta en el DOM en el momento exacto en que se abre el sobre */}
+        {abierto && <BackgroundMusic />}
+        
         {children}
       </div>
 
@@ -42,10 +47,10 @@ export default function EnvelopeGate({
             alt="La noche estrellada"
             fill
             priority
-            className="object-cover"
+            className="object-cover object-center"
           />
-          {/* Overlay oscuro para darle profundidad y que resalte el sobre */}
-          <div className="absolute inset-0 bg-black/40" />
+          {/* Overlay oscuro (lo subí un poquito a /50 para dar más contraste al sobre) */}
+          <div className="absolute inset-0 bg-black/50" />
 
           {/* 2. CONTENIDO CENTRAL */}
           <div className="relative z-10 flex flex-col items-center px-6 w-full max-w-lg">

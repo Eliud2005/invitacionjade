@@ -51,14 +51,14 @@ export default function EventDetails() {
         {/* Sección de Padres y Padrinos */}
         <div className="mt-16 space-y-8">
           <div>
-            <p className="text-[10px] uppercase tracking-[0.3em] text-dorado/70">Padres</p>
+            <p className="text-[10px] uppercase tracking-[0.3em] text-dorado/100">Padres</p>
             <p className="mt-2 text-lg text-white font-serif">{EVENT.padres}</p>
           </div>
           
           <div className="mx-auto h-px w-12 bg-dorado/30" />
 
           <div>
-            <p className="text-[10px] uppercase tracking-[0.3em] text-dorado/70">Padrinos</p>
+            <p className="text-[10px] uppercase tracking-[0.3em] text-dorado/100">Padrinos</p>
             <p className="mt-2 text-lg text-white font-serif">{EVENT.padrinos}</p>
           </div>
         </div>
