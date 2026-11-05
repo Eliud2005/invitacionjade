@@ -9,6 +9,5 @@ export const EVENT = {
   },
   padres: "Armando Sánchez Aguilar y Gloria Elizabeth Hernández Lorenzo",
   padrinos: "Teodoro Esquivel López y Sonia Lorenzo Páramo",
-  whatsapp: "2224264941", // ⚠️ Reemplaza con el número real para RSVP
-  dressCode: "Formal / Etiqueta (Azul Rey)", // Sugerido por el tono formal
+  whatsapp: "9514124045", // ⚠️ Reemplaza con el número real para RSVP
 };

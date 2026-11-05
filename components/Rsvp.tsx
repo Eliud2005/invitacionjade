@@ -57,7 +57,7 @@ export default function Rsvp() {
               // El select también lleva el estilo de cristal. Ojo: las opciones (options) en algunos navegadores móviles toman el color del sistema, pero el fondo del select sí se ve oscuro.
               className="w-full rounded-lg border border-white/20 bg-white/5 px-4 py-3 text-white backdrop-blur-sm transition focus:border-dorado focus:outline-none focus:ring-1 focus:ring-dorado [&>option]:text-black"
             >
-              {[1, 2, 3, 4].map((n) => (
+              {[1, 2, 3, 4,5,6].map((n) => (
                 <option key={n} value={n}>
                   {n} {n === 1 ? "persona" : "personas"}
                 </option>

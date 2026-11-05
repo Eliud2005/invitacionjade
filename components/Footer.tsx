@@ -14,14 +14,23 @@ export default async function Footer() {
   return (
     <footer className="relative overflow-hidden min-h-[450px] flex flex-col justify-center px-6 text-center text-white">
       
-      {/* 👇 IMAGEN DE FONDO (Sin zoom excesivo) */}
+      {/* 👇 IMAGEN DE FONDO (Responsive) */}
       <div className="absolute inset-0 z-0">
+        
+        {/* Imagen para Celular */}
         <Image
           src="/images/fondocarta.png"
           alt="La noche estrellada"
           fill
-          // object-bottom ancla las nubes abajo. Leve zoom para que llene bien.
-          className="object-cover object-bottom scale-110"
+          className="object-cover object-bottom scale-110 md:hidden"
+        />
+
+        {/* Imagen para Computadora */}
+        <Image
+          src="/images/fondocarta2.png"
+          alt="La noche estrellada"
+          fill
+          className="hidden md:block object-cover object-bottom"
         />
         
         {/* 👇 EL TRUCO PARA VER LAS ESTRELLAS: 

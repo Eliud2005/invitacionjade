@@ -16,13 +16,22 @@ export default function Hero() {
       id="inicio"
       className="relative flex min-h-screen items-center justify-center overflow-hidden"
     >
-      {/* Fondo: La misma imagen que en el EnvelopeGate */}
+      {/* Fondo para Celular (Vertical) */}
       <Image
         src="/images/fondocarta.png" 
         alt="La noche estrellada"
         fill
         priority
-        className="object-cover object-center"
+        className="object-cover object-center md:hidden"
+      />
+
+      {/* Fondo para Computadora (Horizontal) */}
+      <Image
+        src="/images/fondocarta2.png" 
+        alt="La noche estrellada"
+        fill
+        priority
+        className="hidden md:block object-cover object-center"
       />
 
       {/* 1. Overlay idéntico al del EnvelopeGate para que la imagen se vea igual de viva */}

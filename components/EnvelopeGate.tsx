@@ -42,15 +42,24 @@ export default function EnvelopeGate({
       {montado && !abierto && (
         <div className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-[#050e24]">
           
-          {/* FONDO RESPONSIVE */}
+          {/* FONDO RESPONSIVE (Celular) */}
           <Image
             src="/images/fondocarta.png"
             alt="La noche estrellada"
             fill
             priority
-            // En móvil se ve normal, en escritorio la oscurecemos un poco más para que el sobre resalte
-            className="object-cover object-center"
+            className="object-cover object-center md:hidden"
           />
+
+          {/* FONDO RESPONSIVE (Computadora) */}
+          <Image
+            src="/images/fondocarta2.png"
+            alt="La noche estrellada"
+            fill
+            priority
+            className="hidden md:block object-cover object-center"
+          />
+
           {/* Overlay oscuro */}
           <div className="absolute inset-0 bg-black/50" />
 
